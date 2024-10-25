@@ -11,3 +11,9 @@ dependencies = [
     "loguru>=0.7.2",
     "click>=8.1.7",
 ]
+
+[project.scripts]
+init-repo-template-uv = "init_repo_template_uv.__main__:_main"
+
+[tool.uv]
+package = true

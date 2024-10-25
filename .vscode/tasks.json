@@ -4,8 +4,10 @@
         {
             "label": "say_hello",
             "type": "shell",
-            "command": "initial-repository-template",
+            "command": "uv",
             "args": [
+                "run",
+                "init-repo-template-uv",
                 "say-hello",
                 "--name", "Llorenç",
                 "--surname", "Buil"

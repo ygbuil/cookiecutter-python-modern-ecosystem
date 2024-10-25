@@ -2,7 +2,7 @@
 
 import click
 
-from initial_repository_template import entry_points
+from init_repo_template_uv import entry_points
 
 
 def _main() -> None:

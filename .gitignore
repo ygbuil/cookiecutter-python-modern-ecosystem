@@ -3,3 +3,6 @@
 .env
 __pycache__/
 .ruff_cache
+
+# uv
+test_uv.egg-info
