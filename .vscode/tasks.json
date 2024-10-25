@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "say_hello",
+            "type": "shell",
+            "command": "initial-repository-template",
+            "args": [
+                "say-hello",
+                "--name", "Llorenç",
+                "--surname", "Buil"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

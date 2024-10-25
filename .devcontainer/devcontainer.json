@@ -1,0 +1,23 @@
+{
+    "name": "Python 3.11 & UV & Oh My Zsh",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "postCreateCommand": "/bin/zsh -c 'uv sync && uv run pre-commit install --hook-type pre-commit --hook-type pre-push'",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/zsh",
+                "python.analysis.inlayHints.functionReturnTypes": true
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-azuretools.vscode-docker",
+                "njpwerner.autodocstring",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.datawrangler"
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "say_hello",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "initial_repository_template",
+            "justMyCode": false,
+            "args": [
+                "say-hello",
+                "--name", "Llorenç",
+                "--surname", "Buil"
+            ],
+        }
+    ],
+}
