@@ -1,3 +1,4 @@
+// TODO: fix launch.json
 {
     "version": "2.0.0",
     "configurations": [
@@ -5,9 +6,11 @@
             "name": "say_hello",
             "type": "debugpy",
             "request": "launch",
-            "program": "initial_repository_template",
+            "program": "uv",
             "justMyCode": false,
             "args": [
+                "run",
+                "init_repo_template_uv",
                 "say-hello",
                 "--name", "Llorenç",
                 "--surname", "Buil"
