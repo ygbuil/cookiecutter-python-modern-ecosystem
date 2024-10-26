@@ -1,8 +1,10 @@
 # general
 .DS_Store
 .env
+
+# pytest
 __pycache__/
-.ruff_cache
+.pytest_cache
 
 # uv
 **/*egg-info*
