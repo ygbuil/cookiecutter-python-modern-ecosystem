@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: init-repo-template-uv
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pre-commit>=3.7.1
+Requires-Dist: ruff>=0.4.6
+Requires-Dist: pytest>=8.3.3
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: click>=8.1.7
+
+# Initial Repository Template
+
+A description of the project
+
+## Usage (with VSCode)
+
+To use the project, follow these steps:
+
+1. Clone the project.
+
+2. Open the project and build the `.devcontainer/Dockerfile` with the VSCode command `Dev Containers: Reopen in Container`.
+
+3. Inside `.vscode/tasks.json`, provide your inputs and run the VSCode command `Tasks: Run Task -> ...`.
