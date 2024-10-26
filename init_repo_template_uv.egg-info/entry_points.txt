@@ -1,2 +1,0 @@
-[console_scripts]
-init-repo-template-uv = init_repo_template_uv.__main__:_main
