@@ -1,4 +1,3 @@
-// TODO: fix launch.json
 {
     "version": "2.0.0",
     "configurations": [
@@ -6,11 +5,9 @@
             "name": "say_hello",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/.venv/bin/init-repo-template-uv",
             "justMyCode": false,
+            "program": "${workspaceFolder}/.venv/bin/init-repo-template-uv",
             "args": [
-                //"run",
-                //"init-repo-template-uv",
                 "say-hello",
                 "--name", "Llorenç",
                 "--surname", "Buil"
