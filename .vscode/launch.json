@@ -6,11 +6,11 @@
             "name": "say_hello",
             "type": "debugpy",
             "request": "launch",
-            "program": "uv",
+            "program": "${workspaceFolder}/.venv/bin/init-repo-template-uv",
             "justMyCode": false,
             "args": [
-                "run",
-                "init_repo_template_uv",
+                //"run",
+                //"init-repo-template-uv",
                 "say-hello",
                 "--name", "Llorenç",
                 "--surname", "Buil"
