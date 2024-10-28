@@ -1,7 +1,7 @@
-# Use the official Python image from the Docker Hub
-FROM python:3.11-slim
+# Use a minimal Debian-based image
+FROM debian:stable-slim
 
-# Install necessary packages including Git, Zsh, and dependencies for Oh My Zsh
+# Install essential packages, Git, Zsh, and dependencies for UV and Oh My Zsh
 RUN apt-get update \
     && apt-get install -y curl git zsh \
     && curl -LsSf https://astral.sh/uv/install.sh | sh \
