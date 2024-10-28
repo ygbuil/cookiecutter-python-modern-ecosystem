@@ -3,7 +3,7 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    "postCreateCommand": "/bin/zsh -c 'uv sync && uv run pre-commit install --hook-type pre-commit --hook-type pre-push'",
+    "postCreateCommand": "/bin/zsh .devcontainer/post-create.sh",
     "customizations": {
         "vscode": {
             "settings": {
