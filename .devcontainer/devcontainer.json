@@ -1,5 +1,5 @@
 {
-    "name": "Python 3.11 & UV & Oh My Zsh",
+    "name": "Debian with Oh My Zsh, Git and UV",
     "build": {
         "dockerfile": "Dockerfile"
     },
