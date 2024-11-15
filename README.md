@@ -16,4 +16,4 @@ To use the project, follow these steps:
 
 * `uv run <command>`: Run any command within the venv interpreter space.
 * `uv sync`: Install dependencies based on `uv.lock`. If not found, it will create a new lock with the latest dependencies possible.
-* `uv lock`: Upgrade dependencies to the latest version possible.
+* `uv lock`: Update `uv.lock` based on `pyproject.toml` specifications.

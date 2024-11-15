@@ -10,6 +10,7 @@ dependencies = [
     "pytest>=8.3.3",
     "loguru>=0.7.2",
     "click>=8.1.7",
+    "pyright>=1.1.389",
 ]
 
 [project.scripts]
@@ -22,6 +23,6 @@ package = true
 line-length = 100
 lint.select = ["ALL"]
 lint.ignore = [
-    "ANN002", "ANN003", "ANN401", "D203", "D205", "D213", "D402", "FA102", "PD901", "PLR0913",
-    "S101", "TRY003"
+    "ANN002", "ANN003", "ANN401", "D203", "D205", "D213", "D402", "EXE002", "FA102", "PD901",
+    "PLR0913", "S101", "TRY003"
 ]
