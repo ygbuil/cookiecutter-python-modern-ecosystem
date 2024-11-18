@@ -4,6 +4,7 @@ FROM debian:stable-slim
 # Install essential packages, Git, Zsh, and dependencies for UV and Oh My Zsh
 RUN apt-get update \
     && apt-get install -y curl git zsh \
+    # && apt-get install -y curl git zsh \
     && curl -LsSf https://astral.sh/uv/install.sh | sh \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
