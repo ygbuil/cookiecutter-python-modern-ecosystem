@@ -8,11 +8,11 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Oh My Zsh
-RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+# # Install Oh My Zsh
+# RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-# Set Zsh as the default shell
-RUN chsh -s /bin/zsh
+# # Set Zsh as the default shell
+# RUN chsh -s /bin/zsh
 
 # Add UV and other custom binaries to the PATH
 ENV PATH="/root/.cargo/bin:$PATH"
