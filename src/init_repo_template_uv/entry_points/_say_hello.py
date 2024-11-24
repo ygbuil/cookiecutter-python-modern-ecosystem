@@ -10,9 +10,12 @@ from loguru import logger
 def say_hello(name: str, surname: str) -> str:
     """Entry point to say hello.
 
-    :param name: Name.
-    :param surname: Surname.
-    :return: Greet.
+    Args:
+        name: Name.
+        surname: Surname.
+
+    Returns:
+        Greet.
     """
     return _say_hello(name, surname)
 
@@ -20,9 +23,12 @@ def say_hello(name: str, surname: str) -> str:
 def _say_hello(name: str, surname: str) -> str:
     """Say hello to user.
 
-    :param name: Name.
-    :param surname: Surname.
-    :return: Greet.
+    Args:
+        name: Name.
+        surname: Surname.
+
+    Returns:
+        Greet.
     """
     greet = f"Hello {name} {surname}!"
     logger.info(greet)
