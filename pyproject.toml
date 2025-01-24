@@ -5,12 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "pre-commit>=3.7.1",
-    "ruff>=0.4.6",
-    "pytest>=8.3.3",
     "loguru>=0.7.2",
     "click>=8.1.7",
-    "mypy>=1.14.1",
 ]
 
 [project.scripts]
@@ -29,3 +25,11 @@ lint.ignore = [
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.14.1",
+    "pre-commit>=4.1.0",
+    "pytest>=8.3.4",
+    "ruff>=0.9.3",
+]
