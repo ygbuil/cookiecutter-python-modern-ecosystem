@@ -76,7 +76,6 @@ dependencies = [
     { name = "loguru" },
     { name = "mypy" },
     { name = "pre-commit" },
-    { name = "pyright" },
     { name = "pytest" },
     { name = "ruff" },
 ]
@@ -87,7 +86,6 @@ requires-dist = [
     { name = "loguru", specifier = ">=0.7.2" },
     { name = "mypy", specifier = ">=1.14.1" },
     { name = "pre-commit", specifier = ">=3.7.1" },
-    { name = "pyright", specifier = ">=1.1.389" },
     { name = "pytest", specifier = ">=8.3.3" },
     { name = "ruff", specifier = ">=0.4.6" },
 ]
@@ -189,19 +187,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/2e/c8/e22c292035f1bac8b9f5237a2622305bc0304e776080b246f3df57c4ff9f/pre_commit-4.0.1.tar.gz", hash = "sha256:80905ac375958c0444c65e9cebebd948b3cdb518f335a091a670a89d652139d2", size = 191678 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/16/8f/496e10d51edd6671ebe0432e33ff800aa86775d2d147ce7d43389324a525/pre_commit-4.0.1-py2.py3-none-any.whl", hash = "sha256:efde913840816312445dc98787724647c65473daefe420785f885e8ed9a06878", size = 218713 },
-]
-
-[[package]]
-name = "pyright"
-version = "1.1.389"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "nodeenv" },
-    { name = "typing-extensions" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/72/4e/9a5ab8745e7606b88c2c7ca223449ac9d82a71fd5e31df47b453f2cb39a1/pyright-1.1.389.tar.gz", hash = "sha256:716bf8cc174ab8b4dcf6828c3298cac05c5ed775dda9910106a5dcfe4c7fe220", size = 21940 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/1b/26/c288cabf8cfc5a27e1aa9e5029b7682c0f920b8074f45d22bf844314d66a/pyright-1.1.389-py3-none-any.whl", hash = "sha256:41e9620bba9254406dc1f621a88ceab5a88af4c826feb4f614d95691ed243a60", size = 18581 },
 ]
 
 [[package]]
