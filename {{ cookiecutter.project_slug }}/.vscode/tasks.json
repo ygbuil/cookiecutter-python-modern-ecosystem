@@ -13,18 +13,6 @@
                 "--surname", "Buil"
             ],
             "problemMatcher": []
-        },
-        {
-            "label": "Render cookiecutter locally",
-            "type": "shell",
-            "command": "cookiecutter",
-            "args": [
-                ".", "--output-dir", "tmp", ";",
-                "mv", "tmp/*/*", ".", "||", "true", ";",
-                "mv", "tmp/*/.*", ".", "2>/dev/null", "||", "true", ";",
-                "rm", "-rf", "tmp"
-            ],
-            "problemMatcher": []
         }
     ]
 }
