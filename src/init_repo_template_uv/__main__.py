@@ -12,7 +12,7 @@ def _main() -> None:
     def entry_point() -> None:
         """Entry point."""
 
-    for command in (entry_points.say_hello,):
+    for command in (entry_points.say_hello, entry_points.sync_files):
         entry_point.add_command(command)
 
     entry_point()
