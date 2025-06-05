@@ -1,6 +1,13 @@
 repos:
   - repo: local
     hooks:
+      - id: compile-cookiecutter-template
+        name: Compile cookiecutter template
+        entry: bash -c "rm -rf init_repo_template_uv && uv run cookiecutter . --no-input"
+        pass_filenames: false
+        language: system
+        stages: [pre-commit]
+
       - id: ruff-formatter
         name: Ruff formatter
         entry: bash -c "cd init_repo_template_uv && uv run ruff format ."

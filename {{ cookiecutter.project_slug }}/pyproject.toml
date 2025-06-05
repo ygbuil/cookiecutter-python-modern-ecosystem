@@ -1,5 +1,5 @@
 [project]
-name = "{{ cookiecutter.project_hyphen }}"
+name = "{{ cookiecutter.project_slug | replace("_", "-") }}"
 version = "0.1.1"
 description = "Add your description here"
 readme = "README.md"
@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [project.scripts]
-{{ cookiecutter.project_hyphen }} = "{{ cookiecutter.project_slug }}.__main__:_main"
+{{ cookiecutter.project_slug | replace("_", "-") }} = "{{ cookiecutter.project_slug }}.__main__:_main"
 
 [tool.uv]
 package = true
@@ -28,7 +28,6 @@ convention = "google"
 
 [dependency-groups]
 dev = [
-    "cookiecutter>=2.6.0",
     "mypy>=1.14.1",
     "pre-commit>=4.1.0",
     "pytest>=8.3.4",

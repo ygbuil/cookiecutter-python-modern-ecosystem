@@ -2,15 +2,13 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "say_hello",
+            "label": "Compile cookiecutter template",
             "type": "shell",
-            "command": "uv",
+            "command": "rm",
             "args": [
-                "run",
-                "init-repo-template-uv",
-                "say-hello",
-                "--name", "Llorenç",
-                "--surname", "Buil"
+                "-rf",
+                "init_repo_template_uv", "&&",
+                "uv", "run", "cookiecutter", "."
             ],
             "problemMatcher": []
         }
