@@ -17,7 +17,7 @@ The template you will get is based on the content inside `{{ cookiecutter.projec
 To use the project, follow these steps:
 
 1. Install cookicutter in your machine with your desired package manager. Example: `uv add cookiecutter`.
-2. On the directory you want to start a new Python project, type `cookiecutter gh:ygbuil/Init-Repo-Template-Uv`. You will be prompted with defining `project_slug`, which will be you project name in snakecase.
+2. On the directory you want to start a new Python project, type `cookiecutter gh:ygbuil/Init-Repo-Template-Uv`. You will be asked to define `project_slug`, which is your project name in snakecase.
 3. Open the project in VSCode, and you will be prompted with `Dev Containers: Reopen in Container`. Do that, and you will have a fully functional Python development environment.
 
 ## UV useful commands
