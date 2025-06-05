@@ -1,7 +1,7 @@
 [project]
 name = "{{ cookiecutter.project_slug | replace("_", "-") }}"
-version = "0.1.0"
-description = "Add your description here"
+version = "{{ cookiecutter.project_version }}"
+description = "{{ cookiecutter.project_description }}"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -32,4 +32,5 @@ dev = [
     "pre-commit>=4.1.0",
     "pytest>=8.3.4",
     "ruff>=0.9.3",
+    "cruft>=2.16.0",
 ]

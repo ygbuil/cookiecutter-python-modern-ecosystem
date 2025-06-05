@@ -16,9 +16,11 @@ The template you will get is based on the content inside `{{ cookiecutter.projec
 
 To use the project, follow these steps:
 
-1. Install cookicutter in your machine with your desired package manager. Example: `uv add cookiecutter`.
-2. On the directory you want to start a new Python project, type `cookiecutter gh:ygbuil/Cookiecutter-Python-Modern-Ecosystem`. You will be asked to define `project_slug`, which is your project/package name in snakecase.
-3. Open the project in VSCode, and you will be prompted with `Dev Containers: Reopen in Container`. Do that, and you will have a fully functional Python development environment.
+* Install cookicutter in your machine with your desired package manager. Example: `uv add cookiecutter`.
+* To start initialize the template you have 2 options:
+    1. **Cookiecutter**: This initialises the template only once and does not track differences in the future. Run `cookiecutter gh:ygbuil/Cookiecutter-Python-Modern-Ecosystem`. You will be asked to define `project_slug`, which is your project/package name in snakecase.
+    2. **Cruft**: This initialises the template and does allow for track differences in the future. Run `cruft create https://github.com/ygbuil/Cookiecutter-Python-Modern-Ecosystem.git`.
+* Open the project in VSCode, and you will be prompted with `Dev Containers: Reopen in Container`. Do that, and you will have a fully functional Python development environment.
 
 ## UV useful commands
 
