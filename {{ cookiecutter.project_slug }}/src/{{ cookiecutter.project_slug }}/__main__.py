@@ -2,7 +2,7 @@
 
 import click
 
-from init_repo_template_uv import entry_points
+from {{ cookiecutter.project_slug }} import entry_points
 
 
 def _main() -> None:
