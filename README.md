@@ -30,5 +30,5 @@ To use the project, follow these steps:
 
 Local workflow:
 * Perform changes in the `{{ cookiecutter.project_slug }}`.
-* To test the code, it will need to be parsed since it contains Jinja code and therefore needs to be parsed. To parse is, use the `Compile cookiecutter template` command in `tasks.json`. This will create the parsed code in the root dir inside `init_repo_template_uv`.
+* To test the code, it will need to be parsed since it contains Jinja. To do so, use the `Compile cookiecutter template` command in `tasks.json`. This will create the parsed code in the root dir inside `init_repo_template_uv`.
 * To execute the code, open `init_repo_template_uv` as a completly independent project in VSCode with its own environment, and execute there. 
