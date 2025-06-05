@@ -21,7 +21,7 @@ To use the project, follow these steps:
 * Now you can check differences between your repo and the cookiecutter using `cruft diff`, and apply the changes you wish.
 * To check the differences between your project files and the cookiecutter files, run `cruft diff` on your repo.
 
-*Note: If you happen to have an already created project and you want to link it with this template latter on, copy `{{ cookiecutter.project_slug }}/.cruft.json` to the root of your project and install cruft `uv add cruft --dev`.*
+*Note: If you happen to have an already created project and you want to link it with this template latter on, copy `{{ cookiecutter.project_slug }}/.cruft.json` to the root of your project and manually parse all Jinja code (the one between `{{}}`). Finally, install cruft `uv add cruft --dev`.*
 
 ## UV useful commands
 

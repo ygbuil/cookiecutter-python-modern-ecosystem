@@ -4,7 +4,6 @@
     "context": {
         "cookiecutter": {
             "project_slug": "{{ cookiecutter.project_slug }}",
-            "project_version": "{{ cookiecutter.project_version }}",
             "project_description": "{{ cookiecutter.project_description }}",
             "_template": "https://github.com/ygbuil/Cookiecutter-Python-Modern-Ecosystem.git",
             "_commit": "f67ee4ee018818b0881389358132ac801014cbac"
