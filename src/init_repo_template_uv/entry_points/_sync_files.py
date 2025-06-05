@@ -9,7 +9,7 @@ from loguru import logger
 
 @click.command()
 def sync_files() -> None:
-    """Sync .pre-commit-config.yaml and .devcontainer/ from base repo into current project."""
+    """Sync hey.py and .devcontainer/ from base repo into current project."""
     _sync_files()
 
 
@@ -20,15 +20,15 @@ def _sync_files() -> str:
     logger.info(f"Target project: {target_dir}")
     logger.info(f"Source template files: {base_dir}")
 
-    # Copy .pre-commit-config.yaml
-    source_precommit = base_dir / ".pre-commit-config.yaml"
-    dest_precommit = target_dir / ".pre-commit-config.yaml"
+    # Copy hey.py
+    source_precommit = base_dir / "hey.py"
+    dest_precommit = target_dir / "hey.py"
 
     if source_precommit.exists():
         shutil.copy(source_precommit, dest_precommit)
-        logger.success("Copied .pre-commit-config.yaml")
+        logger.success("Copied hey.py")
     else:
-        logger.warning(".pre-commit-config.yaml not found in sync_files/")
+        logger.warning("hey.py not found in sync_files/")
 
     # Copy .devcontainer directory
     source_devcontainer = base_dir / ".devcontainer"
