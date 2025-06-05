@@ -19,4 +19,4 @@ __pycache__/
 **/*egg-info*
 
 # project
-init_repo_template_uv
+my_package_name

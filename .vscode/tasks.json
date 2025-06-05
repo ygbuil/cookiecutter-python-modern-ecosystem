@@ -7,7 +7,7 @@
             "command": "rm",
             "args": [
                 "-rf",
-                "init_repo_template_uv", "&&",
+                "my_package_name", "&&",
                 "uv", "run", "cookiecutter", "."
             ],
             "problemMatcher": []

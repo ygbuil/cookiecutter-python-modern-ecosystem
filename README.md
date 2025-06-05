@@ -17,7 +17,7 @@ The template you will get is based on the content inside `{{ cookiecutter.projec
 To use the project, follow these steps:
 
 1. Install cookicutter in your machine with your desired package manager. Example: `uv add cookiecutter`.
-2. On the directory you want to start a new Python project, type `cookiecutter gh:ygbuil/Init-Repo-Template-Uv`. You will be asked to define `project_slug`, which is your project name in snakecase.
+2. On the directory you want to start a new Python project, type `cookiecutter gh:ygbuil/Cookiecutter-Python-Modern-Ecosystem`. You will be asked to define `project_slug`, which is your project/package name in snakecase.
 3. Open the project in VSCode, and you will be prompted with `Dev Containers: Reopen in Container`. Do that, and you will have a fully functional Python development environment.
 
 ## UV useful commands
@@ -30,5 +30,5 @@ To use the project, follow these steps:
 
 Local workflow:
 * Perform changes in the `{{ cookiecutter.project_slug }}`.
-* To test the code, it will need to be parsed since it contains Jinja. To do so, use the `Compile cookiecutter template` command in `tasks.json`. This will create the parsed code in the root dir inside `init_repo_template_uv`.
-* To execute the code, open `init_repo_template_uv` as a completly independent project in VSCode with its own environment, and execute there. 
+* To test the code, it will need to be parsed since it contains Jinja. To do so, use the `Compile cookiecutter template` command in `tasks.json`. This will create the parsed code in the root dir inside `my_package_name`.
+* To execute the code, open `my_package_name` as a completly independent project in VSCode with its own environment, and execute there. 

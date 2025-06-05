@@ -3,42 +3,42 @@ repos:
     hooks:
       - id: compile-cookiecutter-template
         name: Compile cookiecutter template
-        entry: bash -c "rm -rf init_repo_template_uv && uv run cookiecutter . --no-input"
+        entry: bash -c "rm -rf my_package_name && uv run cookiecutter . --no-input"
         pass_filenames: false
         language: system
         stages: [pre-commit]
 
       - id: ruff-formatter
         name: Ruff formatter
-        entry: bash -c "cd init_repo_template_uv && uv run ruff format ."
+        entry: bash -c "cd my_package_name && uv run ruff format ."
         pass_filenames: false
         language: system
         stages: [pre-commit]
 
       - id: ruff-linter
         name: Ruff linter
-        entry: bash -c "cd init_repo_template_uv && uv run ruff check . --fix"
+        entry: bash -c "cd my_package_name && uv run ruff check . --fix"
         pass_filenames: false
         language: system
         stages: [pre-commit]
 
       - id: mypy-type-checker
         name: Mypy type checker
-        entry: bash -c "cd init_repo_template_uv && uv run mypy . --strict"
+        entry: bash -c "cd my_package_name && uv run mypy . --strict"
         pass_filenames: false
         language: system
         stages: [pre-commit]
 
       - id: check-lock
         name: Check lock up to date
-        entry: bash -c "cd init_repo_template_uv && uv lock --locked"
+        entry: bash -c "cd my_package_name && uv lock --locked"
         pass_filenames: false
         language: system
         stages: [pre-commit]
 
       - id: tests
         name: Tests
-        entry: bash -c "cd init_repo_template_uv && uv run pytest"
+        entry: bash -c "cd my_package_name && uv run pytest"
         pass_filenames: false
         language: system
         stages: [pre-push]
