@@ -17,3 +17,6 @@ __pycache__/
 # uv
 .venv
 **/*egg-info*
+
+# project
+init_repo_template_uv
