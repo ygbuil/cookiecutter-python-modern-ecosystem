@@ -1,6 +1,5 @@
 {
     "template": "https://github.com/ygbuil/Cookiecutter-Python-Modern-Ecosystem.git",
-    "commit": "f67ee4ee018818b0881389358132ac801014cbac",
     "checkout": "master",
     "context": {
         "cookiecutter": {
