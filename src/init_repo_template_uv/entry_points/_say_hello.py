@@ -7,7 +7,7 @@ from loguru import logger
 @click.command()
 @click.option("--name")
 @click.option("--surname")
-def say_hello(name: str, surname: str) -> str:
+def say_hello(name: str, surname: str) -> None:
     """Entry point to say hello.
 
     Args:
@@ -17,7 +17,7 @@ def say_hello(name: str, surname: str) -> str:
     Returns:
         Greet.
     """
-    return _say_hello(name, surname)
+    _say_hello(name, surname)
 
 
 def _say_hello(name: str, surname: str) -> str:
