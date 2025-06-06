@@ -1,4 +1,4 @@
-"""Entry point for _say_hello()."""
+"""Say hello."""
 
 import click
 from loguru import logger

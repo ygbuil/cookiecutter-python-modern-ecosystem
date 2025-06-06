@@ -1,4 +1,4 @@
-"""Entry points for initial_repository_template."""
+"""Package entry points."""
 
 import click
 
@@ -12,7 +12,7 @@ def _main() -> None:
     def entry_point() -> None:
         """Entry point."""
 
-    for command in (entry_points.say_hello, entry_points.sync_files):
+    for command in (entry_points.say_hello,):
         entry_point.add_command(command)
 
     entry_point()
