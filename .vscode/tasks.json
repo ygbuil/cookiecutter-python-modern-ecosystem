@@ -4,11 +4,9 @@
         {
             "label": "Compile cookiecutter template",
             "type": "shell",
-            "command": "rm",
+            "command": "uv",
             "args": [
-                "-rf",
-                "my_package_name", "&&",
-                "uv", "run", "cookiecutter", "."
+                "run", "cookiecutter", "."
             ],
             "problemMatcher": []
         }

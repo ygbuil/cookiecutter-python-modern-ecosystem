@@ -1,18 +1,18 @@
-"""Package entry points."""
+"""Cli."""
 
 import click
 
-from {{ cookiecutter.project_slug }} import entry_points
+from {{ cookiecutter.project_slug }} import cli
 
 
 def _main() -> None:
-    """Gathers all entry points of the program."""
+    """Adds all cli commands."""
 
     @click.group(chain=True)
-    def entry_point() -> None:
-        """Entry point."""
+    def add_cli_command() -> None:
+        """Adds a command."""
 
-    for command in (entry_points.say_hello,):
-        entry_point.add_command(command)
+    for command in (cli.say_hello,):
+        add_cli_command.add_command(command)
 
-    entry_point()
+    add_cli_command()
