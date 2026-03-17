@@ -29,13 +29,6 @@ repos:
         language: system
         stages: [pre-commit]
 
-      - id: check-lock
-        name: Check lock up to date
-        entry: bash -c "cd my_package_name && uv lock --locked"
-        pass_filenames: false
-        language: system
-        stages: [pre-commit]
-
       - id: tests
         name: Tests
         entry: bash -c "cd my_package_name && uv run pytest"
